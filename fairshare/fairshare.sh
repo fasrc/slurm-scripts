@@ -44,7 +44,7 @@ sacctmgr -i modify account name=hsph_users set fairshare=168
 sacctmgr -i modify account name=huybers_lab set fairshare=210
 sacctmgr -i modify account name=icecube set fairshare=512
 sacctmgr -i modify account name=idreos_lab set fairshare=485
-sacctmgr -i modify account name=informatics set fairshare=231
+sacctmgr -i modify account name=informatics set fairshare=615
 sacctmgr -i modify account name=ishii_lab set fairshare=202
 sacctmgr -i modify account name=israeli_hbs_lab set fairshare=106
 sacctmgr -i modify account name=itc_lab set fairshare=177
