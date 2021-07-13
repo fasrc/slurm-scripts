@@ -27,7 +27,7 @@ sacctmgr -i modify account name=dvorkin_lab set fairshare=151
 sacctmgr -i modify account name=eddy_lab set fairshare=1282
 sacctmgr -i modify account name=edwards_lab set fairshare=196
 sacctmgr -i modify account name=eisenstein_lab set fairshare=177
-sacctmgr -i modify account name=finkbeiner_lab set fairshare=177
+sacctmgr -i modify account name=finkbeiner_lab set fairshare=434
 sacctmgr -i modify account name=fischer_lab set fairshare=164
 sacctmgr -i modify account name=friend_lab set fairshare=196
 sacctmgr -i modify account name=gershman_lab set fairshare=168
