@@ -19,7 +19,7 @@ sacctmgr -i modify account name=davies_lab set fairshare=928
 sacctmgr -i modify account name=davis_lab set fairshare=131
 sacctmgr -i modify account name=de_mink_lab set fairshare=657
 sacctmgr -i modify account name=denolle_lab set fairshare=150
-sacctmgr -i modify account name=desai_lab set fairshare=325
+sacctmgr -i modify account name=desai_lab set fairshare=312
 sacctmgr -i modify account name=doeleman_lab set fairshare=440
 sacctmgr -i modify account name=doshi-velez_lab set fairshare=222
 sacctmgr -i modify account name=dsouza_lab set fairshare=178
@@ -125,7 +125,7 @@ sacctmgr -i modify account name=xie_lab set fairshare=126
 sacctmgr -i modify account name=xlin set fairshare=437
 sacctmgr -i modify account name=yao_lab set fairshare=600
 sacctmgr -i modify account name=yau2_lab set fairshare=440
-sacctmgr -i modify account name=yin_lab set fairshare=299
+sacctmgr -i modify account name=yin_lab set fairshare=312
 sacctmgr -i modify account name=ysinger_group set fairshare=428
 sacctmgr -i modify account name=zhuang_lab set fairshare=448
 sacctmgr -i modify account name=zickler_lab set fairshare=137

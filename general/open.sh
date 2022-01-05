@@ -1,6 +1,7 @@
 #!/bin/bash
 #nodelist=$(sinfo -p fas_gpu -o "%60E %12U %19H %6t %n" | sed -e '/none/d' | sort |uniq | awk '{print $7}')
 nodelist=$(sinfo -o "%n %60E %12U %19H %6t "  | sed -e '/none/d' | sort |uniq | grep 'Kill task failed'| awk '{ print $1 }')
+#nodelist=$(sinfo -o "%n %60E %12U %19H %6t "  | sed -e '/none/d' | sort |uniq | grep 'procs still running'| awk '{ print $1 }')
 #nodelist=$(/usr/local/bin/lsload | grep MIXED+DRAIN | awk '{{print $1}}')
 #joblist=$(/usr/bin/squeue | grep -i held | awk '{if ($5 =="PD"){print $1}}')
 #joblist=$(/usr/bin/squeue --qos=doshi-velez -u mamasood | awk '{if ($5 =="PD"){print $1}}')
