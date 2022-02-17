@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Generate the list of users needed from sshare
+sshare -a --parsable |sed 's/|/ /g'| awk 'NF==7{print}{}' |tail -n +3 |tac| sort -k1,1 -u | awk '{print $2}' > userlist
+
+# Generate the list of partition that have cluster_users in them
+sinfo -o "%30P %60g" |grep cluster_users | awk '{print $1}' | sed 's/\*//g' > partitionlist
+
+# Loop though the list of paritions and generate job submissions
+while read p; do
+ while read u; do
+  if [ "$p" = "bigmem" ]
+  then
+     echo $u $p
+     sudo -u $u sbatch --partition=$p --output=/dev/null --mail-type=NONE --nodes=1 --ntasks=1 --mem=250000 /odyssey/subdummy/dummy4XDMod
+  elif [ "$p" = "gpu" ]
+  then 
+     echo $u $p
+     sudo -u $u sbatch --partition=$p --output=/dev/null --mail-type=NONE --nodes=1 --ntasks=1 --gres=gpu /odyssey/subdummy/dummy4XDMod
+  elif [ "$p" = "gpu_requeue" ]
+  then
+     echo $u $p
+     sudo -u $u sbatch --partition=$p --output=/dev/null --mail-type=NONE --nodes=1 --ntasks=1 --gres=gpu /odyssey/subdummy/dummy4XDMod
+  elif [ "$p" = "gpu_test" ]
+  then
+     echo $u $p
+     sudo -u $u sbatch --partition=$p --output=/dev/null --mail-type=NONE --nodes=1 --ntasks=1 --gres=gpu /odyssey/subdummy/dummy4XDMod
+  else
+     echo $u $p
+     sudo -u $u sbatch --partition=$p --output=/dev/null --mail-type=NONE --nodes=1 --ntasks=1 /odyssey/subdummy/dummy4XDMod
+  fi
+ done < userlist
+done < partitionlist
+
+# Set all of the submitted job's priorty VERY high
+scontrol update JobName=dummy4XDMod priority=99999999

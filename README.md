@@ -7,6 +7,7 @@ Various useful slurm scripts.
 * open.sh: Can be used to open nodes with a specific state
 * reset.sh: Can be used to IPMI reset nodes in a specific state
 * suspend.sh: Can be used to update or modify jobs that meet specific criteria
+* doit: Used to submit dummy jobs for populating XDMod once a month
 
 ### prunedb
 
