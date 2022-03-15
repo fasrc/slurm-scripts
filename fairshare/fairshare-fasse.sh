@@ -3,5 +3,5 @@
 
 sacctmgr -i modify account set fairshare=100
 sacctmgr -i modify account name=cnl set fairshare=692
-sacctmgr -i modify account name=anderson_lab set fairshare=148
+sacctmgr -i modify account name=nrg set fairshare=148
 
