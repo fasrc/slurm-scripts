@@ -55,7 +55,7 @@ sacctmgr -i modify account name=ke_lab set fairshare=248
 sacctmgr -i modify account name=keith_lab_seas set fairshare=210
 sacctmgr -i modify account name=koumoutsakos_lab set fairshare=1320
 sacctmgr -i modify account name=kovac_lab set fairshare=1061
-sacctmgr -i modify account name=kozinsky_lab set fairshare=984
+sacctmgr -i modify account name=kozinsky_lab set fairshare=3401
 sacctmgr -i modify account name=kuang_lab set fairshare=1478
 sacctmgr -i modify account name=kubzansky_lab set fairshare=133
 sacctmgr -i modify account name=legewie_lab set fairshare=146
@@ -82,6 +82,7 @@ sacctmgr -i modify account name=olveczky_lab set fairshare=538
 sacctmgr -i modify account name=ortegahernandez_lab set fairshare=408
 sacctmgr -i modify account name=parkes_lab set fairshare=505
 sacctmgr -i modify account name=pehlevan_lab set fairshare=2304
+sacctmgr -i modify account name=pfister_lab set fairshare=1561
 sacctmgr -i modify account name=pierce_lab set fairshare=133
 sacctmgr -i modify account name=rush_lab set fairshare=156
 sacctmgr -i modify account name=sabeti_lab set fairshare=353
