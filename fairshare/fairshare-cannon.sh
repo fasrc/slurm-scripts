@@ -104,7 +104,7 @@ sacctmgr -i modify account name=viegas_lab set fairshare=360
 sacctmgr -i modify account name=vishwanath_lab set fairshare=216
 sacctmgr -i modify account name=wattenberg_lab set fairshare=360
 sacctmgr -i modify account name=whipple_lab set fairshare=408
-sacctmgr -i modify account name=wofsy_lab set fairshare=153
+sacctmgr -i modify account name=wofsy_lab set fairshare=718
 sacctmgr -i modify account name=wordsworth_lab set fairshare=939
 sacctmgr -i modify account name=wunsch_lab set fairshare=132
 sacctmgr -i modify account name=xchen_lab set fairshare=197
