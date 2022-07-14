@@ -2,19 +2,16 @@
 #This script sets the fairshare scores for labs.  Based on the 09/27/21 census with adjusted scores.
 
 sacctmgr -i modify account set fairshare=120
-sacctmgr -i modify account name=adair_hbs_lab set fairshare=146
 sacctmgr -i modify account name=anderson_lab set fairshare=132
 sacctmgr -i modify account name=arguelles_delgado_lab set fairshare=1020
 sacctmgr -i modify account name=astrominger_lab set fairshare=440
 sacctmgr -i modify account name=barak_lab set fairshare=521
-sacctmgr -i modify account name=betley_lab set fairshare=126
 sacctmgr -i modify account name=bfarrell_lab set fairshare=122
 sacctmgr -i modify account name=bhi_lab set fairshare=440
 sacctmgr -i modify account name=bloxham_lab set fairshare=560
 sacctmgr -i modify account name=conroy_lab set fairshare=965
 sacctmgr -i modify account name=cox_lab set fairshare=296
 sacctmgr -i modify account name=davies_lab set fairshare=928
-sacctmgr -i modify account name=davis_lab set fairshare=131
 sacctmgr -i modify account name=de_mink_lab set fairshare=657
 sacctmgr -i modify account name=denolle_lab set fairshare=150
 sacctmgr -i modify account name=desai_lab set fairshare=312
@@ -30,7 +27,6 @@ sacctmgr -i modify account name=fischer_lab set fairshare=184
 sacctmgr -i modify account name=friend_lab set fairshare=216
 sacctmgr -i modify account name=giribet_lab set fairshare=216
 sacctmgr -i modify account name=guenette_lab set fairshare=325
-sacctmgr -i modify account name=hbs_rcs set fairshare=146
 sacctmgr -i modify account name=hernquist_external set fairshare=50
 sacctmgr -i modify account name=hernquist_lab set fairshare=606
 sacctmgr -i modify account name=hills_lab set fairshare=312
@@ -42,13 +38,11 @@ sacctmgr -i modify account name=icecube set fairshare=512
 sacctmgr -i modify account name=idreos_lab set fairshare=505
 sacctmgr -i modify account name=informatics set fairshare=635
 sacctmgr -i modify account name=ishii_lab set fairshare=222
-sacctmgr -i modify account name=israeli_hbs_lab set fairshare=126
 sacctmgr -i modify account name=itc_lab set fairshare=197
 sacctmgr -i modify account name=jacob_lab set fairshare=619
 sacctmgr -i modify account name=jacobsen_lab set fairshare=206
 sacctmgr -i modify account name=janson_lab set fairshare=555
 sacctmgr -i modify account name=jjohnson_lab set fairshare=197
-sacctmgr -i modify account name=jschreger_hbs_lab set fairshare=122
 sacctmgr -i modify account name=jshapiro_lab set fairshare=216
 sacctmgr -i modify account name=kaxiras_lab set fairshare=512
 sacctmgr -i modify account name=ke_lab set fairshare=248
@@ -76,21 +70,17 @@ sacctmgr -i modify account name=murphy_lab set fairshare=222
 sacctmgr -i modify account name=narayan_lab set fairshare=1050
 sacctmgr -i modify account name=nguyen_lab set fairshare=216
 sacctmgr -i modify account name=ni_lab set fairshare=146
-sacctmgr -i modify account name=nicholas_hbs_lab set fairshare=126
 sacctmgr -i modify account name=oberg_lab set fairshare=197
 sacctmgr -i modify account name=olveczky_lab set fairshare=538
 sacctmgr -i modify account name=ortegahernandez_lab set fairshare=408
 sacctmgr -i modify account name=parkes_lab set fairshare=505
 sacctmgr -i modify account name=pehlevan_lab set fairshare=2304
 sacctmgr -i modify account name=pfister_lab set fairshare=1561
-sacctmgr -i modify account name=pierce_lab set fairshare=133
 sacctmgr -i modify account name=rush_lab set fairshare=156
 sacctmgr -i modify account name=sabeti_lab set fairshare=353
 sacctmgr -i modify account name=sasselov_lab set fairshare=197
 sacctmgr -i modify account name=schrag_lab set fairshare=230
-sacctmgr -i modify account name=seas_iacs set fairshare=116
 sacctmgr -i modify account name=shakhnovich_lab set fairshare=274
-sacctmgr -i modify account name=slurm_group_hbs_l3 set fairshare=126
 sacctmgr -i modify account name=sompolinsky_lab set fairshare=468
 sacctmgr -i modify account name=stubbs_lab set fairshare=197
 sacctmgr -i modify account name=sunderland_lab set fairshare=171
@@ -106,7 +96,6 @@ sacctmgr -i modify account name=wofsy_lab set fairshare=718
 sacctmgr -i modify account name=wordsworth_lab set fairshare=939
 sacctmgr -i modify account name=wunsch_lab set fairshare=132
 sacctmgr -i modify account name=xchen_lab set fairshare=197
-sacctmgr -i modify account name=xie_lab set fairshare=126
 sacctmgr -i modify account name=xlin set fairshare=629
 sacctmgr -i modify account name=yao_lab set fairshare=600
 sacctmgr -i modify account name=yau2_lab set fairshare=440
