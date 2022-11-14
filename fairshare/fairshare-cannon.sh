@@ -97,7 +97,7 @@ sacctmgr -i modify account name=wordsworth_lab set fairshare=939
 sacctmgr -i modify account name=wunsch_lab set fairshare=132
 sacctmgr -i modify account name=xchen_lab set fairshare=197
 sacctmgr -i modify account name=xlin set fairshare=629
-sacctmgr -i modify account name=yao_lab set fairshare=600
+sacctmgr -i modify account name=yao_lab set fairshare=1080
 sacctmgr -i modify account name=yau2_lab set fairshare=440
 sacctmgr -i modify account name=yin_lab set fairshare=312
 sacctmgr -i modify account name=zhuang_lab set fairshare=448
