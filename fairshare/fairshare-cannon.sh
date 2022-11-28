@@ -43,7 +43,7 @@ sacctmgr -i modify account name=jacob_lab set fairshare=619
 sacctmgr -i modify account name=jacobsen_lab set fairshare=206
 sacctmgr -i modify account name=janson_lab set fairshare=555
 sacctmgr -i modify account name=jjohnson_lab set fairshare=420
-sacctmgr -i modify account name=jshapiro_lab set fairshare=267
+sacctmgr -i modify account name=jshapiro_lab set fairshare=216
 sacctmgr -i modify account name=kaxiras_lab set fairshare=512
 sacctmgr -i modify account name=ke_lab set fairshare=248
 sacctmgr -i modify account name=keith_lab_seas set fairshare=210
