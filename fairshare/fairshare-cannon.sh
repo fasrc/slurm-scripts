@@ -64,11 +64,10 @@ sacctmgr -i modify account name=mazur_lab_seas set fairshare=134
 sacctmgr -i modify account name=mccoll_lab set fairshare=1144
 sacctmgr -i modify account name=mcelroy_lab set fairshare=132
 sacctmgr -i modify account name=meade_lab set fairshare=2080
-sacctmgr -i modify account name=meissner_lab set fairshare=132
 sacctmgr -i modify account name=mitrovica_lab set fairshare=222
 sacctmgr -i modify account name=moorcroft_lab set fairshare=868
 sacctmgr -i modify account name=murphy_lab set fairshare=296
-sacctmgr -i modify account name=narayan_lab set fairshare=1491
+sacctmgr -i modify account name=narayan_lab set fairshare=1376
 sacctmgr -i modify account name=natarajan_lab set fairshare=659
 sacctmgr -i modify account name=nguyen_lab set fairshare=216
 sacctmgr -i modify account name=ni_lab set fairshare=168
