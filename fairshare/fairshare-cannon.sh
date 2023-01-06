@@ -54,7 +54,6 @@ sacctmgr -i modify account name=kovac_lab set fairshare=1450
 sacctmgr -i modify account name=kozinsky_lab set fairshare=6219
 sacctmgr -i modify account name=kuang_lab set fairshare=1480
 sacctmgr -i modify account name=kubzansky_lab set fairshare=133
-sacctmgr -i modify account name=legewie_lab set fairshare=146
 sacctmgr -i modify account name=lichtman_lab set fairshare=712
 sacctmgr -i modify account name=linz_lab set fairshare=2217
 sacctmgr -i modify account name=loeb_lab set fairshare=958
