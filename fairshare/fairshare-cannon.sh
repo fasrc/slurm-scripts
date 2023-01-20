@@ -3,7 +3,7 @@
 
 sacctmgr -i modify account set fairshare=120
 sacctmgr -i modify account name=anderson_lab set fairshare=206
-sacctmgr -i modify account name=arguelles_delgado_lab set fairshare=2007
+sacctmgr -i modify account name=arguelles_delgado_lab set fairshare=3429
 sacctmgr -i modify account name=astrominger_lab set fairshare=659
 sacctmgr -i modify account name=barak_lab set fairshare=325
 sacctmgr -i modify account name=bfarrell_lab set fairshare=206
