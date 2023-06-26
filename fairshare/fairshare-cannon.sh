@@ -2,7 +2,7 @@
 #This script sets the fairshare scores for labs by reading for a csv file.
 #The csv file should be formatted as labname,fairshare
 
-scores=$(cat cannon/cannon-fairshare-census-5-16-23.csv)
+scores=$(cat cannon/cannon-fairshare-census-6-21-23.csv)
 
 sacctmgr -i modify account set fairshare=120
 
