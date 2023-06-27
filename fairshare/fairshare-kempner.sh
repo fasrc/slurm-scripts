@@ -8,6 +8,6 @@ for lab in $kempner_pi_labs
 do
   echo $lab
   echo sacctmgr -i create account name=kempner_$lab fairshare=0
-  lab_users=$(getent group ${lab})
+  lab_users=$(getent group ${lab} | cut -d ":" -f 4)
   echo $lab_users
 done
