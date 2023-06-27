@@ -7,12 +7,10 @@ kempner_pi_labs=$(echo alvarez_lab barak_lab bsabatini_lab jfrankle_lab konkle_l
 for lab in $kempner_pi_labs
 do
   echo $lab
-  echo sacctmgr -i create account name=kempner_$lab fairshare=0
+  sacctmgr -i create account name=kempner_$lab fairshare=0
   lab_users=$(getent group ${lab} | cut -d ":" -f 4)
-  echo $lab_users
   for user in ${lab_users//,/ }
   do
-    echo $user
-    echo sacctmgr -i add user name=$user account=kempner_$lab fairshare=parent maxsubmitjobs=10100
+    sacctmgr -i add user name=$user account=kempner_$lab fairshare=parent maxsubmitjobs=10100
   done
 done
