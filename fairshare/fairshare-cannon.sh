@@ -2,6 +2,9 @@
 #This script sets the fairshare scores for labs by reading for a csv file.
 #The csv file should be formatted as labname,fairshare
 
+# Handles creating the kempner specific fairshare structure.
+./fairshare-kempner.sh
+
 scores=$(cat cannon/cannon-fairshare-census-6-21-23.csv)
 
 sacctmgr -i modify account set fairshare=120
