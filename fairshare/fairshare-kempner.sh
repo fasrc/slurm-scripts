@@ -10,4 +10,9 @@ do
   echo sacctmgr -i create account name=kempner_$lab fairshare=0
   lab_users=$(getent group ${lab} | cut -d ":" -f 4)
   echo $lab_users
+  for user in ${lab_users//,/ }
+  do
+    echo $user
+    echo sacctmgr -i add user name=$user account=kempner_$lab fairshare=parent maxsubmitjobs=10100
+  done
 done
