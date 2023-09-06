@@ -90,7 +90,8 @@ ni_lab,168
 oberg_lab,420
 olveczky_lab,580
 ortegahernandez_lab,702
-parkes_lab,505
+parkes_lab,495
+parkes_low_priority,10
 pehlevan_lab,2304
 pfister_lab,890
 rivas_lab,341
