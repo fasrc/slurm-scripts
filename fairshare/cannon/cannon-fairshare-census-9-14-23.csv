@@ -9,7 +9,8 @@ bhi_lab,659
 bicepdata_group,120
 bloxham_lab,615
 brenner_lab,1940
-cluster_users,43117
+bsabatini_lab,0
+cluster_users,48871
 conroy_lab,1188
 cox_lab,296
 davies_lab,928
@@ -45,7 +46,7 @@ janson_lab,568
 jjohnson_lab,420
 joonholee_lab,216
 jshapiro_lab,267
-kaxiras_lab,512
+kaxiras_lab,469
 ke_lab,248
 keith_lab_seas,296
 keto_lab,420
@@ -60,7 +61,7 @@ kempner_murphy_lab,2184
 kempner_pehlevan_lab,2184
 kempner_sham_lab,2184
 kempner_sompolinsky_lab,2184
-kempner_zitnik_lab,2184
+kempner_mzitnik_lab,2184
 kempner_grads,2860
 kempner_fellows,2741
 kempner_hms,1071
@@ -82,6 +83,7 @@ meade_lab,248
 mitrovica_lab,248
 moorcroft_lab,954
 murphy_lab,290
+mzitnik_lab,0
 narayan_lab,1376
 natarajan_lab,659
 nguyen_lab,216
@@ -119,5 +121,4 @@ yao_lab,1176
 yau2_lab,659
 yin_lab,312
 zhuang_lab,413
-zickler_lab,137
 zon_lab,216

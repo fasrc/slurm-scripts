@@ -3,7 +3,7 @@
 # Instead this script creates the hierarchy for kempner as its different than our standard setup.
 
 # Kempner PI Labs
-kempner_pi_labs=$(echo alvarez_lab ba_lab barak_lab bsabatini_lab gershman_lab jfrankle_lab konkle_lab murphy_lab pehlevan_lab sham_lab sompolinsky_lab zitnik_lab)
+kempner_pi_labs=$(echo alvarez_lab ba_lab barak_lab bsabatini_lab gershman_lab jfrankle_lab konkle_lab murphy_lab pehlevan_lab sham_lab sompolinsky_lab mzitnik_lab)
 
 for lab in $kempner_pi_labs
 do
