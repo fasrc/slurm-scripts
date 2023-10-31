@@ -29,3 +29,17 @@ do
     sacctmgr -i add user name=$user account=$lab fairshare=100 maxsubmitjobs=10100
   done
 done
+
+# Kempner Dev
+kempner_dev_labs=$(echo kempner_dev)
+
+for lab in $kempner_dev_labs
+do
+  echo $lab
+  sacctmgr -i create account name=$lab fairshare=0
+  lab_users=$(getent group ${lab} | cut -d ":" -f 4)
+  for user in ${lab_users//,/ }
+  do
+    sacctmgr -i add user name=$user account=$lab fairshare=parent maxsubmitjobs=10100
+  done
+done
