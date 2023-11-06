@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sshare --parsable2 --noheader > sshare.txt
+sshare -a --parsable2 > sshare.txt
