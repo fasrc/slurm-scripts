@@ -27,6 +27,7 @@ do
   for user in ${lab_users//,/ }
   do
     sacctmgr -i add user name=$user account=$lab fairshare=100 maxsubmitjobs=10100
+    sacctmgr -i modify user name=$user account=$lab set fairshare=100
   done
 done
 
