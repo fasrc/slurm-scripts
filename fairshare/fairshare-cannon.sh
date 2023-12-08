@@ -5,7 +5,7 @@
 # Handles creating the kempner specific fairshare structure.
 ./fairshare-kempner.sh
 
-scores=$(cat cannon/cannon-fairshare-census-11-3-23.csv)
+scores=$(cat cannon/cannon-fairshare-census-12-8-23.csv)
 
 sacctmgr -i modify account set fairshare=120
 
