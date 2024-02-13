@@ -17,7 +17,7 @@ do
 done
 
 # Kempner Other
-kempner_other_labs=$(echo kempner_grads kempner_fellows kempner_hms)
+kempner_other_labs=$(echo kempner_grads kempner_fellows kempner_hms kempner_undergrads)
 
 for lab in $kempner_other_labs
 do
