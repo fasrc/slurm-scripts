@@ -1,5 +1,5 @@
 #!/bin/bash
-nodelist=$(/usr/local/bin/lsload | grep respond | awk '{{print $1}}')
+nodelist=$(/usr/local/bin/lsload | grep kernel | awk '{{print $1}}')
 #nodelist=$(sinfo -p fas_gpu -o "%60E %12U %19H %6t %n" | sed -e '/none/d' | sort |uniq | awk '{print $7}')
 #nodelist=$(sinfo -o "%n %60E %12U %19H %6t "  | sed -e '/none/d' | sort |uniq | grep 'Kill task failed'| awk '{ print $1 }')
 #nodelist=$(sinfo -o "%n %60E %12U %19H %6t "  | sed -e '/none/d' | sort |uniq | grep 'procs still running'| awk '{ print $1 }')
@@ -19,7 +19,6 @@ echo $nodelist
 
 for j in $nodelist
 do
-        j=${j//\(d\)}
 	echo $j
 	scontrol update state=resume nodename=$j
 done
