@@ -12,7 +12,7 @@ let i=0
 
 for u in $userlist
 do
-	if [ $u != root ]
+	if [ $u != root ] && ! sshare -U -u "$u" | grep -q "kempner"
 	then
 		if [ $(sacct --noheader --start=$twoweeks --end=$current -u $u | grep -v dummy | grep -v batch | grep -v extern | wc -l) == 0 ]
 		then
