@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#joblist=$(/usr/bin/squeue -u $1 --noheader -o %A --state=R)
+joblist=$(/usr/bin/squeue --noheader -o %A --state=S)
 #joblist=$(/usr/bin/squeue --noheader --state=S -o %A)
-joblist=$(/usr/bin/squeue | awk '{if ($5 =="S"){print $1}}')
+#joblist=$(/usr/bin/squeue | awk '{if ($5 =="S"){print $1}}')
 #joblist=$(/usr/bin/squeue -p $1 | awk '{if ($5 =="PD"){print $1}}')
 #joblist=$(/usr/bin/squeue | grep -i held |  awk '{if ($5 =="RH"){print $1}}')
 #joblist=$(/usr/bin/squeue --qos=doshi-velez -u mamasood | awk '{if ($5 =="PD"){print $1}}')
