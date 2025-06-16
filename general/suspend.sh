@@ -1,6 +1,6 @@
 #!/bin/bash
 
-joblist=$(/usr/bin/squeue --noheader -o %A --state=S)
+joblist=$(/usr/bin/squeue --noheader -o %A --state=R)
 #joblist=$(/usr/bin/squeue --noheader --state=S -o %A)
 #joblist=$(/usr/bin/squeue | awk '{if ($5 =="S"){print $1}}')
 #joblist=$(/usr/bin/squeue -p $1 | awk '{if ($5 =="PD"){print $1}}')
@@ -27,12 +27,12 @@ do
 #		break
 #	fi
 #
-#        scancel $j
+        scancel $j
 #	scontrol update JobID=$j priority=999999999
 #	scontrol update JobID=$j partition=kempner_requeue,kempner_h100
 #	scontrol update JobID=$j timelimit=+1-00:00:00
 #       scontrol update JobID=$j account=kempner_barak_lab
-        scontrol resume $j
+#        scontrol resume $j
 #	scontrol resume $j
 #	scontrol requeue $j
 #       scontrol release $j
