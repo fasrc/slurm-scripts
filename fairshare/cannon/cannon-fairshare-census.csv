@@ -131,14 +131,16 @@ kempner_dev,200
 kempner_emalach_lab,1750
 kempner_fellows,17700
 kempner_gershman_lab,5050
+kempner_gil_lab,5050
 kempner_grads,24000
 kempner_hms,3750
-kempner_ijones_lab,1750
+kempner_ijones,1750
 kempner_kdbrantley_lab,15538
 kempner_konkle_lab,17635
 kempner_krajan_lab,15538
-kempner_lab,27924
+kempner_lab,17728
 kempner_murphy_lab,5050
+kempner_murthy_users,5050
 kempner_mzitnik_lab,17635
 kempner_pehlevan_lab,5050
 kempner_pslade_lab,5050
@@ -151,7 +153,7 @@ keto_lab,449
 kiyoul_lab,2580
 koumoutsakos_lab,26135
 koutrakis_lab,215
-kovac_lab,1344
+kovac_lab,1240
 kozinsky_lab,3882
 kraft_lab,215
 krajan_lab,0
