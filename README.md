@@ -12,10 +12,10 @@ Various useful slurm scripts.
   input file provided as a command line argument. And, perform rsync
   --dry-run on that path. The input file must contain absolute paths
   with no header
-* purge-checked-paths.sbatch: Used for submitting a batch job for
-  checking if a path exists in an input file provided as a command
-  line argument. And, delete that path using the rsync command. The
-  input file must contain absolute paths with no header
+* purge-checked-paths.sbatch: Used for submitting a batch job, on the
+  test cluster, for checking if a path exists in an input file provided
+  as a command line argument. And, delete that path using the rsync
+  command. The input file must contain absolute paths with no header
 
 ### prunedb
 

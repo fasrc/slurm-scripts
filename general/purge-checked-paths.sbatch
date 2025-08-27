@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Batch script to check the paths using the test command and, if they exist,
-# delete the corresponding directory using the rsync command. The
-# paths are listed in a file that is being passed as a command line
-# argument to this script.
+# Batch script, for the test cluster, to check the paths using the
+# test command and, if they exist, delete the corresponding directory
+# using the rsync command. The paths are listed in a file that is
+# being passed as a command line argument to this script.
 
 #SBATCH -c 1
 #SBATCH -p rc-testing # This is on the test cluster.
