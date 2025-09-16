@@ -1,5 +1,6 @@
 #!/bin/bash
 # This script restores data from the slurm archive depending on name of file.
+# Pass it the path and number of files and it will iterate through the all reimporting them.
 
 filepath=$1
 filecount=$2
