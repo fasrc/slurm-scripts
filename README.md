@@ -6,6 +6,7 @@ Various useful slurm scripts.
 
 * open.sh: Can be used to open nodes with a specific state
 * reset.sh: Can be used to IPMI reset nodes in a specific state
+* reset-requeue.sh: Can be used to IPMI reset nodes that only have preemptable jobs (i.e. jobs from partitions with requeue in the name)
 * suspend.sh: Can be used to update or modify jobs that meet specific criteria
 * doit: Used to submit dummy jobs for populating XDMod once a month
 * check-rsyncdryrun-paths.sh: Used for checking if a path exists in an
