@@ -14,9 +14,9 @@ for u in $userlist
 do
 	if [ $u != root ] && ! sshare -U -u "$u" | grep -q "kempner"
 	then
-		if [ $(sacct --noheader --start=$twoweeks --end=$current -u $u | grep -v dummy | grep -v batch | grep -v extern | wc -l) == 0 ]
+		if [ $(sacct --noheader --start=$twoweeks --end=$current -u $u --format=jobname | grep -v dummy | grep -v batch | grep -v extern | wc -l) == 0 ]
 		then
-			if [ $(sacct --noheader --start=$sixmonths --end=$current -u $u | grep -v dummy | grep -v batch | grep -v extern | wc -l) == 0 ]
+			if [ $(sacct --noheader --start=$sixmonths --end=$current -u $u --format=jobname | grep -v dummy | grep -v batch | grep -v extern | wc -l) == 0 ]
 			then
 				echo $u
 				sacctmgr -i delete user name=$u
