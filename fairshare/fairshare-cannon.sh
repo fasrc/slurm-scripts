@@ -4,7 +4,7 @@
 
 scores=$(cat cannon/cannon-fairshare-census.csv)
 
-sacctmgr -i modify account set fairshare=250
+sacctmgr -i modify account set fairshare=700
 
 for i in $scores
 do
